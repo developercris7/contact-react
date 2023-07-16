@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  background-color: #6C63FF;
+}
+/* header start */
+#form1{
+   width: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding-left: 10px;
+}
+.label{
+  position: absolute;
+  left: -9999px;
+}
+.EditBtn{
+  background-color: white;
+  padding: 6px 10px;
+  border: 2px solid #6C63FF;
+  color:#6C63FF;
+  border-radius: 5px;
+}
+.EditBtn:hover{
+  background-color: #6C63FF;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#Name,#Phone,#Email,#Address,#File{
+  outline: none;
+  border: 1px solid #6C63FF;
+  box-shadow:none;
 }
+/* header end */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ------------------------------ */
+
+/*Contact starts*/
+main{
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  border-radius: 50px;
+}
+  /* .card{
+    width:90%;
+    margin:0px auto;
+  } */
+  .card{
+    width:300px;
+    margin-top: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .profile{
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
+  .box{
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+  }
+  .img{
+    width: 400px;
+    margin: 0px auto;
+  }
+  .box>button{
+    width: 200px;
+    
+  }
+/*Contact ends*/
+/* ------------------ */
+/* New Contact Form starts */
+.form-bg{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(27, 27, 27, 0.4);
+  width: 100%;
+  height: 100vh;
+}
+#newContactForm{
+  
+  width: 400px;
+  background-color: white;
+  min-height: 50vh; 
+  padding:15px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.CompletedImage{
+       width:250px;
+}
+/* New Contact Form end */
+
+/* --------------------------------- */
+@media (width<571px){
+  #newContactForm{
+    width:90%;
+  }
+}
+@media(571px<=width<=991px){
+  #newContactForm{
+    width:50%;
+    min-height: 450px;
+
+  }
+  .CompletedImage{
+    width:300px;
+}
 }
