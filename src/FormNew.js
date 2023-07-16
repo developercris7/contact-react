@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
-import completedImage from './images/completed3.png'
+import completedImage from './images/completed3.jpg'
 
 
 const FormNew = ({ name, setName, number, setNumber, email, setEmail, address, setAddress, checkEdit, formTitle, handleFormClose, handleSubmit, handleChange, feedback }) => {
@@ -87,6 +87,7 @@ const FormNew = ({ name, setName, number, setNumber, email, setEmail, address, s
                   className='form-control mb-2 '
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  autoComplete='off'
                 />
 
                 {(checkEdit) ? (
@@ -102,6 +103,7 @@ const FormNew = ({ name, setName, number, setNumber, email, setEmail, address, s
                       onChange={handleChange}
                       multiple
                       id='File'
+                
                     />
                   </div>
                 ) : ('')}
@@ -121,6 +123,8 @@ const FormNew = ({ name, setName, number, setNumber, email, setEmail, address, s
                   value={number}
                   onChange={(e) => setNumber(e.target.value)}
                   required
+                  autoComplete='off'
+
                 />
 
                 <label
@@ -138,6 +142,8 @@ const FormNew = ({ name, setName, number, setNumber, email, setEmail, address, s
                   id='Email'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  autoComplete='off'
+
                 />
 
                 <label
@@ -152,6 +158,8 @@ const FormNew = ({ name, setName, number, setNumber, email, setEmail, address, s
                   onChange={(e) => setAddress(e.target.value)}
                   className='form-control'
                   placeholder='Address'
+                  autoComplete='off'
+
                 ></textarea>
 
 

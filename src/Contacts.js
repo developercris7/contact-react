@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaEdit, FaTimes, FaTrashAlt } from 'react-icons/fa';
 import { BsPersonFillAdd } from 'react-icons/bs'
-import img1 from './images/not found.png'
+import img1 from './images/not found.jpg'
 
 const Contacts = ({ contact, handleContactDelete, setForm, setCheckEdit, setFormTitle, setName, setNumber, setEmail, setAddress }) => {
 
